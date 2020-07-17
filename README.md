@@ -24,7 +24,7 @@
 
 <br />
 
-### - Languages and Tools...
+### - Languages and Tools
 
 <p align="center">
 
@@ -39,7 +39,7 @@
 
 ***********************************
 
-#### Thank You-🙏🏼
+#### Thank You and have a nice day
 
 <!--
 **zk-g/zk-g** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
