@@ -22,7 +22,7 @@
 
 ### Languages
 
-<p align="center">
+<p align="left">
 
 <!-- For more icons please follow  https://github.com/MikeCodesDotNET/ColoredBadges -->
 
@@ -53,7 +53,7 @@
 
 ### Frameworks and Tools
 
-<p align="center">
+<p align="left">
 
 <!-- For more icons please follow  https://github.com/MikeCodesDotNET/ColoredBadges -->
 
@@ -87,7 +87,7 @@
 
 ### Services
 
-<p align="center">
+<p align="left">
 
 <a href="#">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/services/dockerhub.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
@@ -103,7 +103,7 @@
 
 ### Tools
 
-<p align="center">
+<p align="left">
 
 <a href="#">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/tools/android_studio.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
