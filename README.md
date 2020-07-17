@@ -51,7 +51,7 @@
 
 <br />
 
-### Frameworks
+### 🏁 Frameworks
 
 <p align="left">
 
@@ -85,7 +85,7 @@
 
 <br />
 
-### Services
+### ☁️ Services
 
 <p align="left">
 
@@ -101,7 +101,7 @@
 
 </p>
 
-### Tools
+### 🔨 Tools
 
 <p align="left">
 
