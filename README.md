@@ -16,55 +16,109 @@
 
 <br /><br />
 
----
-
 [![Github Stats By Anurag](https://github-readme-stats.vercel.app/api?username=zk-g&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)](https://github.com/anuraghazra/github-readme-stats)
-
-*************
 
 <br />
 
-### - Languages and Tools
+### Languages
 
 <p align="center">
 
 <!-- For more icons please follow  https://github.com/MikeCodesDotNET/ColoredBadges -->
 
 <a href="#">
-    <img src="help/bootstrap.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/languages/csharp.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>
 <a href="#">
-  <img src="help/badge1.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/languages/dart.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>  
 <a href="#">
-  <img src="help/badge1.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/languages/java.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>  
 <a href="#">
-  <img src="help/badge1.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/languages/js.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>  
 <a href="#">
-  <img src="help/badge1.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/languages/php.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
   <a href="#">
-  <img src="help/badge1.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/languages/python.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>  
 <a href="#">
-  <img src="help/badge1.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
-</a>  
-<a href="#">
-  <img src="help/badge1.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
-</a> 
-
-<img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/languages/csharp.svg" alt="csharp" style="vertical-align:top; margin:4px"><img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/languages/js.svg" alt="js" style="vertical-align:top; margin:4px"><img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/languages/python.svg" alt="python" style="vertical-align:top; margin:4px"><img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/vue.svg" alt="vue" style="vertical-align:top; margin:4px"><img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/misc/cloud.svg" alt="cloud" style="vertical-align:top; margin:4px"><img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/services/npm.svg" alt="npm" style="vertical-align:top; margin:4px">
-
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/languages/sass.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>
 
 </p>
 
+<br />
 
+### Frameworks and Tools
 
+<p align="center">
 
-***********************************
+<!-- For more icons please follow  https://github.com/MikeCodesDotNET/ColoredBadges -->
 
-#### Thank You and have a nice day
+<a href="#">
+    <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/bootstrap.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>
+<a href="#">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/flutter.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>  
+<a href="#">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/jquery.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>  
+<a href="#">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/laravel.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>  
+<a href="#">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/nodejs.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+  <a href="#">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/unity.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>  
+<a href="#">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/vue.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>  
+<a href="#">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/xamarin_forms.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>
+
+</p>
+
+<br />
+
+### Services
+
+<p align="center">
+
+<a href="#">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/services/dockerhub.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>
+<a href="#">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/services/kubernetes.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>
+<a href="#">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/services/azure.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>
+
+</p>
+
+### Tools
+
+<p align="center">
+
+<a href="#">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/tools/android_studio.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>
+<a href="#">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/tools/visualstudio.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>
+<a href="#">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/tools/visualstudio_code.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>
+<a href="#">
+  <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/tools/xcode.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>
+
+</p>
 
 <!--
 **zk-g/zk-g** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
