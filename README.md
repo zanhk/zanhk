@@ -51,7 +51,7 @@
 
 <br />
 
-### Frameworks and Tools
+### Frameworks
 
 <p align="left">
 
