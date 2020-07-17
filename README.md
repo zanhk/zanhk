@@ -49,8 +49,6 @@
 
 </p>
 
-<br />
-
 ### 🏁 Frameworks
 
 <p align="left">
@@ -82,8 +80,6 @@
 </a>
 
 </p>
-
-<br />
 
 ### ☁️ Services
 
