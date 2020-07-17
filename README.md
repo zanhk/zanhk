@@ -30,6 +30,31 @@
 
 <!-- For more icons please follow  https://github.com/MikeCodesDotNET/ColoredBadges -->
 
+<a href="#">
+    <img src="help/bootstrap.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>
+<a href="#">
+  <img src="help/badge1.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>  
+<a href="#">
+  <img src="help/badge1.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>  
+<a href="#">
+  <img src="help/badge1.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>  
+<a href="#">
+  <img src="help/badge1.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+  <a href="#">
+  <img src="help/badge1.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>  
+<a href="#">
+  <img src="help/badge1.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a>  
+<a href="#">
+  <img src="help/badge1.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
+</a> 
+
+<img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/languages/csharp.svg" alt="csharp" style="vertical-align:top; margin:4px"><img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/languages/js.svg" alt="js" style="vertical-align:top; margin:4px"><img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/languages/python.svg" alt="python" style="vertical-align:top; margin:4px"><img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/vue.svg" alt="vue" style="vertical-align:top; margin:4px"><img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/misc/cloud.svg" alt="cloud" style="vertical-align:top; margin:4px"><img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/services/npm.svg" alt="npm" style="vertical-align:top; margin:4px">
 
 
 </p>
