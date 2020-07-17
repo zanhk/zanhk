@@ -49,33 +49,34 @@
 
 </p>
 
-### 🏁 Frameworks
+### 🏁 Frameworks and engines
 
 <p align="left">
 
 <!-- For more icons please follow  https://github.com/MikeCodesDotNET/ColoredBadges -->
 
-<a href="#">
+<a href="https://getbootstrap.com/">
     <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/bootstrap.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>
-<a href="#">
+<a href="https://flutter.dev/">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/flutter.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>  
-<a href="#">
+<a href="https://jquery.com/">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/jquery.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>  
-<a href="#">
+<a href="https://laravel.com/">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/laravel.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>  
-<a href="#">
+<a href="https://nodejs.org/en/">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/nodejs.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
-  <a href="#">
+</a>
+<a href="https://unity.com/">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/unity.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>  
-<a href="#">
+<a href="https://vuejs.org/">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/vue.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>  
-<a href="#">
+<a href="https://dotnet.microsoft.com/apps/xamarin/xamarin-forms">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/frameworks/xamarin_forms.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>
 
@@ -85,13 +86,13 @@
 
 <p align="left">
 
-<a href="#">
+<a href="https://hub.docker.com/">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/services/dockerhub.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>
-<a href="#">
+<a href="https://kubernetes.io/">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/services/kubernetes.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>
-<a href="#">
+<a href="https://azure.microsoft.com/en-us/">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/services/azure.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>
 
@@ -101,16 +102,16 @@
 
 <p align="left">
 
-<a href="#">
+<a href="https://developer.android.com/studio">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/tools/android_studio.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>
-<a href="#">
+<a href="https://visualstudio.microsoft.com/">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/tools/visualstudio.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>
-<a href="#">
+<a href="https://code.visualstudio.com/">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/tools/visualstudio_code.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>
-<a href="#">
+<a href="https://developer.apple.com/xcode/">
   <img src="https://raw.githubusercontent.com/zk-g/zk-g/master/svg/dev/tools/xcode.svg" alt="example badge" style="vertical-align:top margin:6px 4px">
 </a>
 
