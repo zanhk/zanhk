@@ -28,7 +28,7 @@
 <br />
 
 <p align="center">
-    <span>//TODO: change this, I have always been passionate about the world of technology and its fast evolution, in high school I enrolled in a computer field of study that gave me the foundations of logical programming that grant me to learn with more ease different languages that I still use. During high school with a group of friends we decided to create a great country event, the good results made us think we could do things even bigger.</span>
+    <span>//TODO: change this, I have always been passionate about the world of technology and its fast evolution, in high school I enrolled in a computer field of study that gave me the foundations of logical programming that grant me to learn with more ease different languages that .</span>
   <img align="center" alt="Stats" width="49%" src="https://github-readme-stats.vercel.app/api?username=zk-g&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515" />
 </p>
 </p>
