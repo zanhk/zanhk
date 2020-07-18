@@ -1,4 +1,4 @@
-<h2> Hey, Haany here! 👋</h2><p align="right" style="margin-top: -40px;"> <img src="https://komarev.com/ghpvc/?username=zk-g" alt="zk-g" /> </p>
+<h2> Hey, Haany here! 👋 <p align="right"> <img src="https://komarev.com/ghpvc/?username=zk-g" alt="zk-g" /> </p></h2>
 
 <br/>
 <a href="https://twitter.com/zankfx">
