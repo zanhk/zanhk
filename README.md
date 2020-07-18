@@ -18,7 +18,7 @@
   </a>
 </p>
 
-<h2> Hey, welcome! 👋 </h2>
+<h2> Hey, welcome to my profile! 👋 </h2>
 <span style="vertical-align: middle;"> <img src="https://komarev.com/ghpvc/?username=zk-g" alt="zk-g" /> </span>
 <a href="https://github.com/zk-g">
 <span style="vertical-align: middle;"> <img src="https://img.shields.io/github/followers/zk-g?label=follow&style=social" alt="zk-g" /> </span>
