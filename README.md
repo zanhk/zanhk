@@ -28,7 +28,7 @@
 <br />
 
 <p align="center">
-    <span>//TODO: change this, I have always been passionate about the world of technology and its fast evolution, in high school I enrolled in a computer field of study that gave me the foundations of logical programming that grant me to learn with more ease different languages that I still use. During high school with a group of friends we decided to create a great country event, the good results made us think we could do things even bigger. At this point someone had to take care of the graphic and I decided to propose myself, so, I started looking at guides and tutorials on how to use programs like photoshop and illustrator to create posters and flyers and premiere and after effects to create awesome videos; This took me so much that before enrolling in CS university I decided to do a specialization course in graphics design and advertising that allowed me to improve with the Adobe suite and the phases of the creation of each graphic project.</span>
+    <span>//TODO: change this, I have always been passionate about the world of technology and its fast evolution, in high school I enrolled in a computer field of study that gave me the foundations of logical programming that grant me to learn with more ease different languages that I still use. During high school with a group of friends we decided to create a great country event, the good results made us think we could do things even bigger.</span>
   <img align="center" alt="Stats" width="49%" src="https://github-readme-stats.vercel.app/api?username=zk-g&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515" />
 </p>
 </p>
