@@ -41,7 +41,7 @@
   <tbody>
     <tr>
 	    <td><a href="https://github.com/ciano-x/coding-in-a-nutshell"><b>Coding in a nutshell</b></a></td>
-      <td><img alt="Stars" src="https://img.shields.io/github/stars/ciano-x/rcoding-in-a-nutshell?style=flat-square&labelColor=343b41"/></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/ciano-x/coding-in-a-nutshell?style=flat-square&labelColor=343b41"/></td>
       <td><img alt="Forks" src="https://img.shields.io/github/forks/ciano-x/coding-in-a-nutshell?style=flat-square&labelColor=343b41"/></td>
       <td><img alt="Issues" src="https://img.shields.io/github/issues/ciano-x/coding-in-a-nutshell?style=flat-square&labelColor=343b41"/></td>
       <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/ciano-x/coding-in-a-nutshell?style=flat-square&labelColor=343b41"/></td>
