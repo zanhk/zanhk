@@ -19,7 +19,8 @@
 <br />
 
 
-<h2> Hey, Haany here! 👋 <span style="vertical-align: middle;"> <img src="https://komarev.com/ghpvc/?username=zk-g" alt="zk-g" /> </span></h2>
+<h2> Hey, welcome! 👋 </h2>
+<span style="vertical-align: middle;"> <img src="https://komarev.com/ghpvc/?username=zk-g" alt="zk-g" /> </span>
 
 
 
