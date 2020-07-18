@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hi there 👋 <p align="left"> <img src="https://komarev.com/ghpvc/?username=zk-g" alt="zk-g" /> </p>
 
 <br/>
 <a href="https://twitter.com/zankfx">
