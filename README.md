@@ -1,5 +1,5 @@
 <a href="https://twitter.com/zankfx">
-  <img align="center" alt="zankfx | Twitter" width="22px" src="https://raw.githubusercontent.com/zk-g/zk-g/master/gif/zank-logo-animation.gif" />
+  <img align="center" alt="zankfx | Twitter" width="100%" src="https://raw.githubusercontent.com/zk-g/zk-g/master/gif/zank-logo-animation.gif" />
 </a>
 <p align="center">
   <a href="https://twitter.com/zankfx">
