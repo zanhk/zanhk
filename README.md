@@ -1,4 +1,4 @@
-### Hi there 👋<p align="right" style="padding-top:-25px;"> <img src="https://komarev.com/ghpvc/?username=zk-g" alt="zk-g" /> </p>
+### Hi there 👋<p align="right" style="margin-top: -25px;"> <img src="https://komarev.com/ghpvc/?username=zk-g" alt="zk-g" /> </p>
 
 <br/>
 <a href="https://twitter.com/zankfx">
