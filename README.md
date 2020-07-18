@@ -2,6 +2,7 @@
   <img align="center" alt="zankfx | Twitter" width="100%" src="https://raw.githubusercontent.com/zk-g/zk-g/master/gif/zank-logo-animation.gif" />
 </a>
 <br />
+<br />
 <p align="center">
   <a href="https://twitter.com/zankfx">
     <img align="center" alt="zankfx | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />
@@ -23,9 +24,11 @@
 <h2> Hey, welcome! 👋 </h2>
 <span style="vertical-align: middle;"> <img src="https://komarev.com/ghpvc/?username=zk-g" alt="zk-g" /> </span>
 
+<br />
+<br />
 
 <p align="center">
-  <img align="center" alt="Stats" width="100%" src="https://github-readme-stats.vercel.app/api?username=zk-g&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515" />
+  <img align="center" alt="Stats" width="100px" src="https://github-readme-stats.vercel.app/api?username=zk-g&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515" />
 </p>
 
 <br />
