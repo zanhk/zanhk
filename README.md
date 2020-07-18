@@ -23,7 +23,9 @@
 
 <h2> Hey, welcome! 👋 </h2>
 <span style="vertical-align: middle;"> <img src="https://komarev.com/ghpvc/?username=zk-g" alt="zk-g" /> </span>
-[![GitHub zank](https://img.shields.io/github/followers/zk-g?label=follow&style=social)](https://github.com/zk-g)
+<a href="https://github.com/zk-g">
+<span style="vertical-align: middle;"> <img src="https://img.shields.io/github/followers/zk-g?label=follow&style=social" alt="zk-g" /> </span>
+ </a>
 
 
 
