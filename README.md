@@ -20,6 +20,8 @@
 
 <br />
 
+<details>
+ <summary><strong>Stack</strong></summary>
 ### Languages
 
 <p align="left">
@@ -116,6 +118,11 @@
 </a>
 
 </p>
+ 
+</details>
+
+
+
 
 <!--
 **zk-g/zk-g** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
