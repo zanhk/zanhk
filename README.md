@@ -1,4 +1,4 @@
-<a href="https://twitter.com/zankfx">
+<a href="https://zank.it">
   <img align="center" alt="zankfx | Twitter" width="100%" src="https://raw.githubusercontent.com/zk-g/zk-g/master/gif/zank-logo-animation.gif" />
 </a>
 <br />
