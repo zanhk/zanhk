@@ -28,8 +28,12 @@
 <br />
 
 <div align="center">
+  <div align="left">
     <span>//TODO: change this, I have always been passionate about the world of technology and its fast evolution, in high school I enrolled in a computer field of study that gave me the foundations of logical programming that grant me to learn with more ease different languages that .</span>
+  </div>
+  <div align="rigth">
   <img align="center" alt="Stats" width="49%" src="https://github-readme-stats.vercel.app/api?username=zk-g&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515" />
+  </div>
 </div>
 
 <br />
