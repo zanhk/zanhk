@@ -21,7 +21,8 @@
 <br />
 
 <details>
- <summary><strong>Stack</strong></summary>
+<summary><strong>Stack</strong></summary>
+
 ### Languages
 
 <p align="left">
