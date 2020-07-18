@@ -1,7 +1,6 @@
-<h2> Hey, Haany here! 👋 <span style="vertical-align: middle;"> <img src="https://komarev.com/ghpvc/?username=zk-g" alt="zk-g" /> </span></h2>
-
-<br/>
-<a href="https://twitter.com/zankfx">
+# [![zank logo gif](https://raw.githubusercontent.com/zk-g/zk-g/master/gif/zank-logo-animation.gif)](https://zank.it)
+<p align='center'>
+  <a href="https://twitter.com/zankfx">
   <img align="left" alt="Hemant Joshi| Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />
 </a>
 <a href="https://www.linkedin.com/in/zank/">
@@ -13,8 +12,12 @@
 <a href="https://www.reddit.com/user/zankfx/">
   <img align="left" alt=" Reddit" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/reddit.svg" />
 </a>
+</p>
 
-<br /><br />
+
+<h2> Hey, Haany here! 👋 <span style="vertical-align: middle;"> <img src="https://komarev.com/ghpvc/?username=zk-g" alt="zk-g" /> </span></h2>
+
+
 
 [![Github Stats By Anurag](https://github-readme-stats.vercel.app/api?username=zk-g&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)](https://github.com/anuraghazra/github-readme-stats)
 
