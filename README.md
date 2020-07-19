@@ -27,7 +27,7 @@
 <br />
 
 <h3>New open source projects</h3>
-<p>Helps appreciated!</p>
+<p>Helps welcomed!</p>
 <table>
   <thead align="center">
     <tr>
