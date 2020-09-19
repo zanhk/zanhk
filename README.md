@@ -3,7 +3,7 @@
 </a>
 <br />
 <br />
-<p align="center">
+<p align="center" style="color:orange">
   <a href="https://twitter.com/zankfx">
     <img align="center" alt="zankfx | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />
   </a>
