@@ -14,7 +14,7 @@
 </span>
 <span style="display:block;" class="row">
 <a target="_blank" href="https://gist.github.com/zk-g/">
-	<img align="center" style="vertical-align:top; margin:20px 0" width="830" src="images/gists.png" />
+	<img align="center" style="vertical-align:top; margin:20px 0" width="835" src="images/gists.png" />
 </a>
 </span>
 <span style="display:block;" class="row">
