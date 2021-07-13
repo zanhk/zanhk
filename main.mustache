@@ -26,5 +26,4 @@
 	<img align="center;" style="margin: 20px 0;"  width="415" src="images/gist.gif" />
 </a>
 
-
 </p>
