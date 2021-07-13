@@ -17,8 +17,8 @@
     "dynamic",
     "javascript"
   ],
-  "author": "Thomas Guibert",
-  "license": "ISC",
+  "author": "Giulio Zanchetta",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/zk-g/zk-g/issues"
   },
