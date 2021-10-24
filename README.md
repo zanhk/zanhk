@@ -1,26 +1,26 @@
 <p style="align:center">
 
 <a target="_blank" href="https://zank.it">
-	<img align="center" style="vertical-align:top; margin:20px 0" width="833" src="images/zank.gif" />
+	<img align="center" style="vertical-align:top; margin:20px 0" width="830" src="images/zank.gif" />
 </a>
 
 
 <a target="_blank" href="http://warps.io/">
-	<img align="center;" style="vertical-align:top; margin:20px 0" width="203" src="images/warps.gif" />
+	<img align="center;" style="vertical-align:top; margin:20px 0" width="200" src="images/warps.gif" />
 </a> 
 <a target="_blank" href="http://bitrack.io/">
-	<img align="center;" style="vertical-align:top; margin:20px 20px" width="203" src="images/bitrack.gif" />
+	<img align="center;" style="vertical-align:top; margin:20px 20px" width="200" src="images/bitrack.gif" />
 </a> 
 <a target="_blank" href="http://warpify.io/">
-	<img align="center;" style="vertical-align:top; margin:20px 20px" width="203" src="images/warpify.gif" />
+	<img align="center;" style="vertical-align:top; margin:20px 20px" width="200" src="images/warpify.gif" />
 </a>
 <a href="mailto:zank@outlook.it">
-	<img align="center;" style="vertical-align:top; margin:20px 20px" width="203" src="images/mail.gif" />
+	<img align="center;" style="vertical-align:top; margin:20px 20px" width="200" src="images/mail.gif" />
 </a> 
 	
 
 <a target="_blank" href="http://svuag.com/">
-	<img align="center;" style="vertical-align:top; margin:20px 20px" width="413" src="images/svuag.gif" />
+	<img align="center;" style="vertical-align:top; margin:20px 20px" width="410" src="images/svuag.gif" />
 </a>
 <a target="_blank" href="https://gist.github.com/zk-g">
 	<img align="center;" style="margin: 20px 0;"  width="415" src="images/gist.gif" />
