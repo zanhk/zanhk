@@ -6,16 +6,16 @@
 
 
 <a target="_blank" href="http://warps.io/">
-	<img align="center;" style="vertical-align:top; margin:20px 0" width="200" src="images/warps.gif" />
+	<img align="center;" style="vertical-align:top; margin:20px 0" width="198" src="images/warps.gif" />
 </a> 
 <a target="_blank" href="http://bitrack.io/">
-	<img align="center;" style="vertical-align:top; margin:20px 20px" width="200" src="images/bitrack.gif" />
+	<img align="center;" style="vertical-align:top; margin:20px 20px" width="198" src="images/bitrack.gif" />
 </a> 
 <a target="_blank" href="http://warpify.io/">
-	<img align="center;" style="vertical-align:top; margin:20px 20px" width="200" src="images/warpify.gif" />
+	<img align="center;" style="vertical-align:top; margin:20px 20px" width="198" src="images/warpify.gif" />
 </a>
 <a href="mailto:zank@outlook.it">
-	<img align="center;" style="vertical-align:top; margin:20px 20px" width="200" src="images/mail.gif" />
+	<img align="center;" style="vertical-align:top; margin:20px 20px" width="198" src="images/mail.gif" />
 </a> 
 	
 
