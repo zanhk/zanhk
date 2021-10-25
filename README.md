@@ -20,10 +20,10 @@
 	
 
 <a target="_blank" href="http://svuag.com/">
-	<img align="center;" style="vertical-align:top; margin:20px 20px" width="410" src="images/svuag.gif" />
+	<img align="center;" style="vertical-align:top; margin:20px 20px" width="405" src="images/svuag.gif" />
 </a>
 <a target="_blank" href="https://gist.github.com/zk-g">
-	<img align="center;" style="margin: 20px 0;"  width="410" src="images/gist.gif" />
+	<img align="center;" style="margin: 20px 0;"  width="405" src="images/gist.gif" />
 </a>
 
 </p>
