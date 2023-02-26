@@ -1,0 +1,24 @@
+name: Generate image
+
+on:
+    issues:
+        types: [opened]
+
+jobs:
+    generate-image:
+        name: Generate image
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout main
+              uses: actions/checkout@v3
+              with:
+                  persist-credentials: false
+
+            - name: Install and Build
+              run: |
+                  npm install
+                  npm run start
+              env:
+                  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+                  OPENAI_PROMPT: ${{ github.event.issue.title }}
+                  GITHUB_USERNAME: ${{ github.event.issue.user.login }}
