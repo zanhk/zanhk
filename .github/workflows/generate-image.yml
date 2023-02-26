@@ -2,11 +2,16 @@ name: Generate image
 
 on:
     push:
+        branches:
+            - main
     issues:
         types: [opened]
 
 env:
     node_version: "18.x"
+    OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    OPENAI_PROMPT: ${{ github.event.issue.title }}
+    GITHUB_USERNAME: ${{ github.event.issue.user.login }}
 
 jobs:
     generate-image:
@@ -19,7 +24,3 @@ jobs:
                   node-version: ${{ env.node_version }}
             - run: npm install
             - run: npm run start
-              env:
-                  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-                  OPENAI_PROMPT: ${{ github.event.issue.title }}
-                  GITHUB_USERNAME: ${{ github.event.issue.user.login }}
