@@ -12,6 +12,7 @@ env:
     OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
     OPENAI_PROMPT: ${{ github.event.issue.title }}
     GITHUB_USERNAME: ${{ github.event.issue.user.login }}
+    TEST_VARIABLE: "TEST"
 
 jobs:
     generate-image:
