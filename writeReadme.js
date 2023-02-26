@@ -12,7 +12,7 @@ function printReadme(imageName, prompt, username) {
 	const content = `
 <div align="center">
   <br>
-  <a href="https://raw.githubusercontent.com/zk-g/zk-g/master/images/${imageName}"><img src="https://raw.githubusercontent.com/zk-g/zk-g/master/images/${imageName}" width="1024px"></a>
+  <a href="https://raw.githubusercontent.com/zk-g/zk-g/main/images/${imageName}"><img src="https://raw.githubusercontent.com/zk-g/zk-g/main/images/${imageName}" width="1024px"></a>
   <br>
   <br>
   <p class="has-text-grey">${prompt} by <a href="https://github.com/${username}" target="_blank">${username}</a></p>

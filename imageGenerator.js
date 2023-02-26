@@ -35,7 +35,7 @@ async function generateImageAndSave(prompt, username) {
 	var promptNormalized = prompt.replace(/[^a-zA-Z0-9]/g, "_");
 	var dateString = formatDate(new Date());
 
-	var imageName = `${dateString}_${username}_${promptNormalized}`;
+	var imageName = `${dateString}_${username}_${promptNormalized}`.toLowerCase();
 
 	const response = await openai.createImage({
 		prompt: prompt,
