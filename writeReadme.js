@@ -26,10 +26,10 @@ const username = process.env.GITHUB_USERNAME || "zk-g";
 
 console.log(process.env.TEST_VARIABLE);
 
-const writeReadme = async function () {
-	var generatedImageRes = await generateImageAndSave(promt, username);
-	var readMeContent = printReadme(generatedImageRes.file.path, generatedImageRes.prompt, generatedImageRes.username);
-	console.info(`${readMeContent}`);
-};
+// const writeReadme = async function () {
+// 	var generatedImageRes = await generateImageAndSave(promt, username);
+// 	var readMeContent = printReadme(generatedImageRes.file.path, generatedImageRes.prompt, generatedImageRes.username);
+// 	console.info(`${readMeContent}`);
+// };
 
-writeReadme();
+// writeReadme();
