@@ -15,7 +15,7 @@ function printReadme(imageName, prompt, username) {
   <a href="https://raw.githubusercontent.com/zk-g/zk-g/main/${imageName}"><img src="https://raw.githubusercontent.com/zk-g/zk-g/main/${imageName}" width="1024px"></a>
   <br>
   <br>
-  <p class="has-text-grey">${prompt} by <a href="https://github.com/${username}" target="_blank">${username}</a></p>
+  <p class="has-text-grey">"${prompt}" by <a href="https://github.com/${username}" target="_blank">${username}</a></p>
   <p class="has-text-grey">Generate new photo <a href="https://github.com/zk-g/zk-g/issues/new/choose">here</a></p>
 </div>`;
 	return content;
