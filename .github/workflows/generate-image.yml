@@ -9,10 +9,6 @@ on:
 
 env:
     node_version: "18.x"
-    OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-    OPENAI_PROMPT: ${{ github.event.issue.title }}
-    GITHUB_USERNAME: ${{ github.event.issue.user.login }}
-    TEST_VARIABLE: "TEST"
 
 jobs:
     generate-image:
@@ -23,5 +19,10 @@ jobs:
             - uses: actions/setup-node@v3
               with:
                   node-version: ${{ env.node_version }}
-            - run: npm install
-            - run: npm run start
+            - run: |
+                  touch .env
+                  echo OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} >> .env
+                  echo OPENAI_PROMPT=${{ github.event.issue.title }} >> .env
+                  echo GITHUB_USERNAME=${{ github.event.issue.user.login }} >> .env
+                  npm install
+                  npm run start
