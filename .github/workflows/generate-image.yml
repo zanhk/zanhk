@@ -4,20 +4,20 @@ on:
     issues:
         types: [opened]
 
+env:
+    node_version: "18.x"
+
 jobs:
     generate-image:
         name: Generate image
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout main
-              uses: actions/checkout@v3
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
               with:
-                  persist-credentials: false
-
-            - name: Install and Build
-              run: |
-                  npm install
-                  npm run start
+                  node-version: ${{ env.node_version }}
+            - run: npm install
+            - run: npm run start
               env:
                   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
                   OPENAI_PROMPT: ${{ github.event.issue.title }}
