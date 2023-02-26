@@ -1,6 +1,7 @@
 name: Generate image
 
 on:
+    push:
     issues:
         types: [opened]
 

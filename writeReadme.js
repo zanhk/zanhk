@@ -21,8 +21,8 @@ function printReadme(imageName, prompt, username) {
 	return content;
 }
 
-const promt = process.env.OPENAI_PROMPT;
-const username = process.env.GITHUB_USERNAME;
+const promt = process.env.OPENAI_PROMPT || "Two futuristic towers with a skybridge covered in lush foliage, digital art";
+const username = process.env.GITHUB_USERNAME || "zk-g";
 
 const writeReadme = async function () {
 	var generatedImageRes = await generateImageAndSave(promt, username);
