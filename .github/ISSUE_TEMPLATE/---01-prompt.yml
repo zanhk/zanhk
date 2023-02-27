@@ -1,6 +1,5 @@
 name: "\U0001F5BC Prompt"
 description: Prompt for a new image
-title: "Your prompt here"
 labels: ["prompt"]
 assignees: []
 body:
