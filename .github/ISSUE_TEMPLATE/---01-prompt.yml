@@ -1,14 +1,14 @@
 name: "\U0001F5BC Prompt"
-description: Prompt for a new image (title)
+description: Prompt for a new image
 title: "Your prompt here"
 labels: ["prompt"]
 assignees: []
 body:
-    - type: markdown
-      attributes:
-          value: Use the title to create a prompt for a new image
     - type: dropdown
       attributes:
-          label: Generation type
+          label: Size
+          description: Smaller size generate faster
           options:
-              - TODO
+              - 256x256
+              - 512x512
+              - 1024x1024

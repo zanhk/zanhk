@@ -11,8 +11,8 @@ const { generateImageAndSave } = require("./imageGenerator.js");
 function printReadme(imageName, prompt, username) {
 	const content = `
 <div align="center">
-  <br>
   <a href="https://raw.githubusercontent.com/zk-g/zk-g/main/${imageName}"><img src="https://raw.githubusercontent.com/zk-g/zk-g/main/${imageName}" width="1024px"></a>
+  <br>
   <br>
   <br>
   <p class="has-text-grey">"${prompt}" by <a href="https://github.com/${username}" target="_blank">${username}</a></p>
@@ -23,9 +23,10 @@ function printReadme(imageName, prompt, username) {
 
 const promt = process.env.OPENAI_PROMPT || "Two futuristic towers with a skybridge covered in lush foliage, digital art";
 const username = process.env.GITHUB_USERNAME || "zk-g";
+const size = process.env.OPENAI_OPTION_SIZE || "1024x1024";
 
 const writeReadme = async function () {
-	var generatedImageRes = await generateImageAndSave(promt, username);
+	var generatedImageRes = await generateImageAndSave(promt, username, size);
 	var readMeContent = printReadme(generatedImageRes.file.path, generatedImageRes.prompt, generatedImageRes.username);
 	console.info(`${readMeContent}`);
 };

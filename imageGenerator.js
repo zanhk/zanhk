@@ -31,7 +31,7 @@ function formatDate(date) {
  * @param {string} username
  * @returns
  */
-async function generateImageAndSave(prompt, username) {
+async function generateImageAndSave(prompt, username, size) {
 	var promptNormalized = prompt.replace(/[^a-zA-Z0-9]/g, "_");
 	var dateString = formatDate(new Date());
 
@@ -40,7 +40,7 @@ async function generateImageAndSave(prompt, username) {
 	const response = await openai.createImage({
 		prompt: prompt,
 		n: 1,
-		size: "1024x1024"
+		size: size
 	});
 
 	const file = fs.createWriteStream(`images/${imageName}.png`);
