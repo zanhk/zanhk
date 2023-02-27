@@ -12,7 +12,7 @@ env:
 
 jobs:
     generate-image:
-        if: github.event.label.name == 'prompt'
+        if: github.event.issue.label.name == 'prompt'
         runs-on: ubuntu-latest
         steps:
             - name: Generate image
