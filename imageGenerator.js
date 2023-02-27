@@ -1,6 +1,9 @@
 const { Configuration, OpenAIApi } = require("openai");
 const http = require("https"); // or 'https' for https:// URLs
 const fs = require("fs");
+var Filter = require("bad-words");
+
+var customFilter = new Filter({ placeHolder: "x" });
 
 const configuration = new Configuration({
 	apiKey: process.env.OPENAI_API_KEY
@@ -37,8 +40,10 @@ async function generateImageAndSave(prompt, username, size) {
 
 	var imageName = `${dateString}_${username}_${promptNormalized}`.toLowerCase();
 
+	var cleanedPromt = customFilter.clean(prompt);
+
 	const response = await openai.createImage({
-		prompt: prompt,
+		prompt: cleanedPromt,
 		n: 1,
 		size: size
 	});
