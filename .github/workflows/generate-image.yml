@@ -23,6 +23,7 @@ jobs:
                   echo OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} >> .env
                   echo OPENAI_PROMPT=${{ github.event.issue.title }} >> .env
                   echo OPENAI_OPTION_SIZE=1024x1024 >> .env
+                  echo GITHUB_ISSUE_ID=${{ github.event.issue.id }} >> .env
                   echo GITHUB_USERNAME=${{ github.event.issue.user.login }} >> .env
             - name: Install dependencies
               run: npm install

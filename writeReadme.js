@@ -23,10 +23,11 @@ function printReadme(imageName, prompt, username) {
 
 const promt = process.env.OPENAI_PROMPT || "Two futuristic towers with a skybridge covered in lush foliage, digital art";
 const username = process.env.GITHUB_USERNAME || "zk-g";
+const issueId = process.env.GITHUB_ISSUE_ID || 0;
 const size = process.env.OPENAI_OPTION_SIZE || "1024x1024";
 
 const writeReadme = async function () {
-	var generatedImageRes = await generateImageAndSave(promt, username, size);
+	var generatedImageRes = await generateImageAndSave(promt, issueId, username, size);
 	var readMeContent = printReadme(generatedImageRes.file.path, generatedImageRes.prompt, generatedImageRes.username);
 	console.info(`${readMeContent}`);
 };

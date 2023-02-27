@@ -34,11 +34,8 @@ function formatDate(date) {
  * @param {string} username
  * @returns
  */
-async function generateImageAndSave(prompt, username, size) {
-	var promptNormalized = prompt.replace(/[^a-zA-Z0-9]/g, "_");
-	var dateString = formatDate(new Date());
-
-	var imageName = `${dateString}_${username}_${promptNormalized}`.toLowerCase();
+async function generateImageAndSave(prompt, issueId, username, size) {
+	var imageName = issueId;
 
 	var cleanedPromt = customFilter.clean(prompt);
 
