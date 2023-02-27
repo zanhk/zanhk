@@ -1,6 +1,6 @@
 
 <div align="center">
-  <a href="https://raw.githubusercontent.com/zk-g/zk-g/main/images/2023_02_27_zk-g_a_digital_illustration_of_the_babel_tower__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png"><img src="https://raw.githubusercontent.com/zk-g/zk-g/main/images/2023_02_27_zk-g_a_digital_illustration_of_the_babel_tower__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png" width="1024px"></a>
+  <a href="https://raw.githubusercontent.com/zk-g/zk-g/main/images/25.png"><img src="https://raw.githubusercontent.com/zk-g/zk-g/main/images/25.png" width="1024px"></a>
   <br>
   <br>
   <br>
