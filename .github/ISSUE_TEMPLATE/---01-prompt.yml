@@ -1,0 +1,5 @@
+name: "\U0001F5BC Prompt"
+description: Prompt for a new image (title)
+title: "Your prompt here"
+labels: ["prompt"]
+assignees: []
