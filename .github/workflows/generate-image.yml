@@ -1,18 +1,15 @@
 name: Generate image
 
 on:
-    push:
-        branches:
-            - main
     issues:
         types: [opened]
+        labels: ["prompt"]
 
 env:
     node_version: "18.x"
 
 jobs:
     generate-image:
-        if: github.event.issue.label.name == 'prompt'
         runs-on: ubuntu-latest
         steps:
             - name: Generate image
