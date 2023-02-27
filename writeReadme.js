@@ -23,7 +23,7 @@ function printReadme(imageName, prompt, username) {
 
 const promt = process.env.OPENAI_PROMPT || "Two futuristic towers with a skybridge covered in lush foliage, digital art";
 const username = process.env.GITHUB_USERNAME || "zk-g";
-const issueId = process.env.GITHUB_ISSUE_ID || 0;
+const issueId = process.env.GITHUB_ISSUE_NUMBER || 0;
 const size = process.env.OPENAI_OPTION_SIZE || "1024x1024";
 
 const writeReadme = async function () {
