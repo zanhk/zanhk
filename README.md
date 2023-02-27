@@ -5,5 +5,5 @@
   <br>
   <br>
   <p class="has-text-grey">"An oil painting of a mechanical clockwork flying machine from the renaissance, Gorgeous digital painting, amazing art, artstation 3, realistic" by <a href="https://github.com/zk-g" target="_blank">zk-g</a></p>
-  <sup>Generate new photo <a href="https://github.com/zk-g/zk-g/issues/new/choose">here</a></sup>
+  <sup><p class="has-text-grey">Generate new photo <a href="https://github.com/zk-g/zk-g/issues/new/choose">here</a></p></sup>
 </div>
