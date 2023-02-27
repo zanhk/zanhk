@@ -12,17 +12,21 @@ env:
 
 jobs:
     generate-image:
-        name: Generate image
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3
-            - uses: actions/setup-node@v3
+          - name: Generate image
+            uses: actions/checkout@v3
+            uses: actions/setup-node@v3
               with:
                   node-version: ${{ env.node_version }}
-            - run: |
-                  touch .env
-                  echo OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} >> .env
-                  echo OPENAI_PROMPT=${{ github.event.issue.title }} >> .env
-                  echo GITHUB_USERNAME=${{ github.event.issue.user.login }} >> .env
-                  npm install
-                  npm run start
+            run: |
+              touch .env
+              echo OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} >> .env
+              echo OPENAI_PROMPT=${{ github.event.issue.title }} >> .env
+              echo GITHUB_USERNAME=${{ github.event.issue.user.login }} >> .env
+              npm install
+              npm run start
+          - name: Push new README.md
+            uses: mikeal/publish-to-github-action@master
+            env:
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
