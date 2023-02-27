@@ -3,7 +3,6 @@ name: Generate image
 on:
     issues:
         types: [opened]
-        labels: ["prompt"]
 
 env:
     node_version: "18.x"

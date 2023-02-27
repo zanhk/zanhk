@@ -58,7 +58,7 @@ async function generateImageAndSave(prompt, username, size) {
 	});
 
 	return {
-		prompt: prompt,
+		prompt: cleanedPromt,
 		username: username,
 		file: file,
 		request: request
