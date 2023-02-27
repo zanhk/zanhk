@@ -3,3 +3,4 @@ description: Prompt for a new image (title)
 title: "Your prompt here"
 labels: ["prompt"]
 assignees: []
+body:
