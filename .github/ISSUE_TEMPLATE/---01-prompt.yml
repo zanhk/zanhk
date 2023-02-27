@@ -4,3 +4,6 @@ title: "Your prompt here"
 labels: ["prompt"]
 assignees: []
 body:
+    - type: markdown
+      attributes:
+          value: Use the title to create a prompt for a new image
