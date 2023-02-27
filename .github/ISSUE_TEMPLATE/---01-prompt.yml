@@ -7,3 +7,8 @@ body:
     - type: markdown
       attributes:
           value: Use the title to create a prompt for a new image
+    - type: dropdown
+      attributes:
+          label: Generation type
+          options:
+              - TODO
