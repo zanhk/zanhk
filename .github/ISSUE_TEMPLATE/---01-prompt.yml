@@ -15,4 +15,4 @@ body:
     - type: markdown
       attributes:
           value: |
-              It will take a few minutes to generate the new image.
+              It will take few seconds to generate the new image.
