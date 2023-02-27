@@ -16,7 +16,7 @@ function printReadme(imageName, prompt, username) {
   <br>
   <br>
   <p class="has-text-grey">"${prompt}" by <a href="https://github.com/${username}" target="_blank">${username}</a></p>
-  <sup>Generate a new photo <a href="https://github.com/zk-g/zk-g/issues/new/choose">here</a></sup>
+  <sup><a href="https://github.com/zk-g/zk-g/issues/new/choose">Generate a new image</a></sup>
 </div>`;
 	return content;
 }
