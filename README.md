@@ -4,6 +4,6 @@
   <br>
   <br>
   <br>
-  <p class="has-text-grey">"3D render of a floating futuristic castle in a clear sky, digital art" by <a href="https://github.com/zk-g" target="_blank">zk-g</a></p>
+  <p class="has-text-grey">"3D render of a floating futuristic castle in a clear sky, digital art" by @zk-g</p>
   <sup><a href="https://github.com/zk-g/zk-g/issues/new/choose">Generate a new image</a></sup>
 </div>
