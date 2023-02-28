@@ -1,6 +1,5 @@
 name: "\U0001F5BC Prompt"
 description: Prompt for a new image
-placeholder: "Insert here your prompt"
 labels: ["prompt"]
 assignees: []
 body:
@@ -14,6 +13,7 @@ body:
               - 1024x1024
     - type: checkboxes
       attributes:
+          label: Confirmation
           options:
               - label: Confirm that the prompt doesn't contain any offensive content
                 required: true
