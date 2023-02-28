@@ -6,14 +6,13 @@ body:
     - type: dropdown
       attributes:
           label: Size
-          description: Smaller size generate faster
+          description: A smaller image generate faster
           options:
-              - 256x256
               - 512x512
               - 1024x1024
     - type: checkboxes
       attributes:
-          label: Confirmation
+          label: Notice
           options:
               - label: Confirm that the prompt doesn't contain any offensive content
                 required: true

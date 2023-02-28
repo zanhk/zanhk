@@ -35,3 +35,9 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   BRANCH_NAME: main
+            - name: Create comment
+              uses: peter-evans/create-or-update-comment@v2
+              with:
+                  issue-number: ${{ github.event.issue.number }}
+                  body: |
+                      @${{ github.event.issue.user.login }} You can download the generated image at [https://raw.githubusercontent.com/zk-g/zk-g/main/${{ github.event.issue.number }}.png](https://raw.githubusercontent.com/zk-g/zk-g/main/${{ github.event.issue.number }}.png)
