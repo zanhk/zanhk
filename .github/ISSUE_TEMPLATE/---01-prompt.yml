@@ -3,13 +3,6 @@ description: Prompt for a new image
 labels: ["prompt"]
 assignees: []
 body:
-    - type: dropdown
-      attributes:
-          label: Size
-          description: A smaller image generate faster
-          options:
-              - 512x512
-              - 1024x1024
     - type: checkboxes
       attributes:
           label: Notice
@@ -19,4 +12,4 @@ body:
     - type: markdown
       attributes:
           value: |
-              It will take few seconds to generate the new image.
+              <sup>NOTE: It will take few seconds to generate the new image.<sup>
