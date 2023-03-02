@@ -30,7 +30,7 @@ async function writeTextToImage(file, text) {
 
 	// Calculate the x and y positions for the text
 	const xPos = imageWidth - textWidth - 20; // 20 pixels from the right edge
-	const yPos = imageHeight - 20; // 20 pixels from the bottom edge
+	const yPos = imageHeight - 30; // 20 pixels from the bottom edge
 
 	// Print the text onto the image at the calculated position
 	image.print(font, xPos, yPos, text);
