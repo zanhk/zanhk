@@ -1,6 +1,8 @@
 const { Configuration, OpenAIApi } = require("openai");
 const http = require("https"); // or 'https' for https:// URLs
 const fs = require("fs");
+const Jimp = require("jimp");
+
 var Filter = require("bad-words");
 
 var customFilter = new Filter({ placeHolder: "x" });
@@ -12,20 +14,32 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 /**
- * Format a date to YYYY_MM_DD
- * @param {Date} date
- * @returns
+ * You guessed! it writes text to an image
+ * @param {*} file
+ * @param {string} text
  */
-function formatDate(date) {
-	var d = new Date(date),
-		month = "" + (d.getMonth() + 1),
-		day = "" + d.getDate(),
-		year = d.getFullYear();
+async function writeTextToImage(file, text) {
+	const font = await Jimp.loadFont(Jimp.FONT_SANS_16_WHITE);
 
-	if (month.length < 2) month = "0" + month;
-	if (day.length < 2) day = "0" + day;
+	const image = await Jimp.read(file.path);
 
-	return [year, month, day].join("_");
+	// Get the width and height of the image and the text
+	const imageWidth = image.bitmap.width;
+	const imageHeight = image.bitmap.height;
+	const textWidth = Jimp.measureText(font, text);
+
+	// Calculate the x and y positions for the text
+	const xPos = imageWidth - textWidth - 20; // 20 pixels from the right edge
+	const yPos = imageHeight - 20; // 20 pixels from the bottom edge
+
+	// Print the text onto the image at the calculated position
+	image.print(font, xPos, yPos, text);
+
+	const mask = await Jimp.read("./mask.png");
+
+	image.mask(mask, 0, 0);
+
+	return image.write(file.path);
 }
 
 /**
@@ -50,6 +64,7 @@ async function generateImageAndSave(prompt, issueId, username, size) {
 	const request = await http.get(response.data.data[0].url, function (response) {
 		response.pipe(file);
 		file.on("finish", () => {
+			writeTextToImage(file, "zank.it");
 			file.close();
 		});
 	});
