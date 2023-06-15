@@ -11,7 +11,7 @@ const { generateImageAndSave } = require("./imageGenerator.js");
 function printReadme(imageName, prompt, username) {
 	const content = `
 <div align="center">
-  <a href="https://raw.githubusercontent.com/zk-g/zk-g/main/${imageName}"><img src="https://raw.githubusercontent.com/zk-g/zk-g/main/${imageName}" width="1024px"></a>
+  <a href="https://zank.it" target="_blank"><img src="https://raw.githubusercontent.com/zk-g/zk-g/main/${imageName}" width="1024px"></a>
   <br>
   <br>
   <br>
