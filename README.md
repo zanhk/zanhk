@@ -1,6 +1,6 @@
 
 <div align="center">
-  <a href="https://zank.it" target="_blank"><img src="https://raw.githubusercontent.com/zk-g/zk-g/main/images/66.png" width="1024px"></a>
+  <a href="https://zank.it" target="_blank"><img src="https://raw.githubusercontent.com/zk-g/zk-g/main/images/67.png" width="1024px"></a>
   <br>
   <br>
   <br>
