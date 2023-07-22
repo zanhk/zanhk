@@ -16,14 +16,14 @@ function printReadme(imageName, prompt, username) {
   <br>
   <br>
   <p class="has-text-grey"><i>"${prompt}"</i> by <a href="https://github.com/${username}" target="_blank">@${username}</a></p>
-  <p><samp><a href="https://github.com/zk-g/zk-g/issues/new/choose">Generate a new image</a></samp></p>
+  <p><samp><a href="https://github.com/zanhk/zanhk/discussions/new?category=prompt">Generate a new image</a></samp></p>
 </div>`;
 	return content;
 }
 
 const promt = process.env.OPENAI_PROMPT || "Two futuristic towers with a skybridge covered in lush foliage, digital art";
-const username = process.env.GITHUB_USERNAME || "zk-g";
-const issueId = process.env.GITHUB_ISSUE_NUMBER || 0;
+const username = process.env.GITHUB_USERNAME || "zanhk";
+const issueId = process.env.GITHUB_DISCUSSION_NUMBER || 0;
 const size = process.env.OPENAI_OPTION_SIZE || "1024x1024";
 
 const writeReadme = async function () {

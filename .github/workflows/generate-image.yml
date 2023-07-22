@@ -1,7 +1,7 @@
 name: Generate image
 
 on:
-    issues:
+    discussion:
         types: [labeled]
 
 env:
@@ -22,10 +22,10 @@ jobs:
               run: |
                   touch .env
                   echo OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} >> .env
-                  echo OPENAI_PROMPT=${{ github.event.issue.title }} >> .env
+                  echo OPENAI_PROMPT=${{ github.event.discussion.title }} >> .env
                   echo OPENAI_OPTION_SIZE=1024x1024 >> .env
-                  echo GITHUB_ISSUE_NUMBER=${{ github.event.issue.number }} >> .env
-                  echo GITHUB_USERNAME=${{ github.event.issue.user.login }} >> .env
+                  echo GITHUB_DISCUSSION_NUMBER=${{ github.event.discussion.number }} >> .env
+                  echo GITHUB_USERNAME=${{ github.event.discussion.user.login }} >> .env
             - name: Install dependencies
               run: npm install
             - name: start
@@ -38,6 +38,6 @@ jobs:
             - name: Create comment
               uses: peter-evans/create-or-update-comment@v2
               with:
-                  issue-number: ${{ github.event.issue.number }}
+                  issue-number: ${{ github.event.discussion.number }}
                   body: |
-                      @${{ github.event.issue.user.login }} You can download the generated image at [https://raw.githubusercontent.com/zk-g/zk-g/main/images/${{ github.event.issue.number }}.png](https://raw.githubusercontent.com/zk-g/zk-g/main/images/${{ github.event.issue.number }}.png)
+                      @${{ github.event.discussion.user.login }} You can download the generated image at [https://raw.githubusercontent.com/zk-g/zk-g/main/images/${{ github.event.discussion.number }}.png](https://raw.githubusercontent.com/zk-g/zk-g/main/images/${{ github.event.discussion.number }}.png)
