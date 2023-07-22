@@ -1,4 +1,4 @@
-title: "[Prompt for a new image] "
+title: "[Prompt]"
 body:
     - type: dropdown
       id: model
