@@ -1,8 +1,13 @@
-name: "\U0001F5BC Prompt"
-description: Prompt for a new image
-labels: ["prompt"]
-assignees: []
+title: "[Prompt for a new image] "
 body:
+    - type: dropdown
+      id: model
+      attributes:
+          label: What model do you want to use?
+          options:
+              - DALL-E 2
+      validations:
+          required: true
     - type: checkboxes
       attributes:
           label: Notice
