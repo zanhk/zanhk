@@ -1,4 +1,5 @@
 title: "[Prompt]"
+labels: ["prompt"]
 body:
     - type: dropdown
       id: model
