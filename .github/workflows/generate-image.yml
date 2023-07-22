@@ -2,14 +2,14 @@ name: Generate image
 
 on:
     discussion:
-        types: [labeled]
+        types: [created]
 
 env:
     node_version: "18.x"
 
 jobs:
     generate-image:
-        if: github.event.label.name == 'prompt'
+        if: github.event.discussion.category.name == 'Prompt'
         runs-on: ubuntu-latest
         steps:
             - name: Generate image
@@ -35,9 +35,3 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   BRANCH_NAME: main
-            - name: Create comment
-              uses: peter-evans/create-or-update-comment@v2
-              with:
-                  issue-number: ${{ github.event.discussion.number }}
-                  body: |
-                      @${{ github.event.discussion.user.login }} You can download the generated image at [https://raw.githubusercontent.com/zk-g/zk-g/main/images/${{ github.event.discussion.number }}.png](https://raw.githubusercontent.com/zk-g/zk-g/main/images/${{ github.event.discussion.number }}.png)
