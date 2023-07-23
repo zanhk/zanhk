@@ -79,8 +79,8 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 	};
 
 	const body = {
-		width: size,
-		height: size,
+		width: 512,
+		height: 512,
 		steps: 50,
 		seed: 0,
 		cfg_scale: 7,
@@ -88,7 +88,7 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 		style_preset: "enhance",
 		text_prompts: [
 			{
-				text: prompt,
+				text: "Test",
 				weight: 1,
 			},
 		],
@@ -136,6 +136,7 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 				reject(error);
 			});
 
+		console.debug("Request body: " + JSON.stringify(body));
 		req.write(JSON.stringify(body));
 		req.end();
 	});
