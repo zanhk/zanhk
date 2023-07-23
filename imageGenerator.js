@@ -15,13 +15,13 @@ const openai = new OpenAIApi(configuration);
 
 /**
  * You guessed! it writes text to an image
- * @param {*} file
+ * @param {*} imagePath
  * @param {string} text
  */
-async function writeTextToImage(file, text) {
+async function writeTextToImage(imagePath, text) {
 	const font = await Jimp.loadFont(Jimp.FONT_SANS_16_WHITE);
 
-	const image = await Jimp.read(file.path);
+	const image = await Jimp.read(imagePath);
 
 	// Get the width and height of the image and the text
 	const imageWidth = image.bitmap.width;
@@ -39,7 +39,7 @@ async function writeTextToImage(file, text) {
 
 	image.mask(mask, 0, 0);
 
-	return image.write(file.path);
+	return image.write(imagePath);
 }
 
 async function openAiGenerateImage(prompt, size, imageName) {
@@ -56,7 +56,7 @@ async function openAiGenerateImage(prompt, size, imageName) {
 	const request = await http.get(response.data.data[0].url, function (response) {
 		response.pipe(file);
 		file.on("finish", () => {
-			writeTextToImage(file, "zank.it");
+			writeTextToImage(file.path, "zank.it");
 			file.close();
 		});
 	});
@@ -119,7 +119,11 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 
 					// save the image
 					const imagePath = `images/${imageName}.png`;
+
 					fs.writeFileSync(imagePath, Buffer.from(image.base64, "base64"));
+
+					// add the text to image
+					writeTextToImage(imagePath, "zank.it"); // use imagePath instead of file stream
 
 					resolve({
 						file: {
