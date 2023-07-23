@@ -102,40 +102,42 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 	};
 
 	const res = new Promise((resolve, reject) => {
-		http.request(options, (res) => {
-			let data = "";
+		let req = http
+			.request(options, (res) => {
+				let data = "";
 
-			res.on("data", (chunk) => {
-				data += chunk;
-			});
-
-			res.on("end", () => {
-				console.debug("Stable Diffusion result data: " + data);
-
-				const responseJSON = JSON.parse(data);
-
-				// get the image from response
-				const image = responseJSON.artifacts[0];
-
-				// save the image
-				const imagePath = `images/${imageName}.png`;
-				fs.writeFileSync(imagePath, Buffer.from(image.base64, "base64"));
-
-				resolve({
-					file: {
-						path: imagePath,
-					},
-					prompt: prompt,
-					username: username,
+				res.on("data", (chunk) => {
+					data += chunk;
 				});
-			});
-		})
+
+				res.on("end", () => {
+					console.debug("Stable Diffusion result data: " + data);
+
+					const responseJSON = JSON.parse(data);
+
+					// get the image from response
+					const image = responseJSON.artifacts[0];
+
+					// save the image
+					const imagePath = `images/${imageName}.png`;
+					fs.writeFileSync(imagePath, Buffer.from(image.base64, "base64"));
+
+					resolve({
+						file: {
+							path: imagePath,
+						},
+						prompt: prompt,
+						username: username,
+					});
+				});
+			})
 			.on("error", (error) => {
 				console.error(error);
 				reject(error);
-			})
-			.write(JSON.stringify(body))
-			.end();
+			});
+
+		req.write(JSON.stringify(body));
+		req.end();
 	});
 
 	return res;
