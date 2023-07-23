@@ -12,9 +12,9 @@ jobs:
         if: github.event.discussion.category.name == 'Prompt'
         runs-on: ubuntu-latest
         steps:
-            - name: Generate image
+            - name: Checkout
               uses: actions/checkout@v3
-            - name: setup node
+            - name: Setup node
               uses: actions/setup-node@v3
               with:
                   node-version: ${{ env.node_version }}
@@ -28,9 +28,16 @@ jobs:
                   echo IMAGE_SIZE="1024" >> .env
                   echo GITHUB_DISCUSSION_NUMBER="${{ github.event.discussion.number }}" >> .env
                   echo GITHUB_USERNAME="${{ github.event.discussion.user.login }}" >> .env
+            - name: Output environment variables
+              run: |
+                  echo "PROMPT: ${{ env.PROMPT }}"
+                  echo "DISCUSSION_BODY: ${{ env.DISCUSSION_BODY }}"
+                  echo "IMAGE_SIZE: ${{ env.IMAGE_SIZE }}"
+                  echo "GITHUB_DISCUSSION_NUMBER: ${{ env.GITHUB_DISCUSSION_NUMBER }}"
+                  echo "GITHUB_USERNAME: ${{ env.GITHUB_USERNAME }}"
             - name: Install dependencies
               run: npm install
-            - name: start
+            - name: Generate image and write readme
               run: npm run start
             - name: Push new README.md
               uses: mikeal/publish-to-github-action@master
