@@ -59,7 +59,10 @@ async function openAiGenerateImage(prompt, size, imageName) {
 		});
 	});
 
-	return request;
+	return {
+		file: file,
+		request: request,
+	};
 }
 
 async function stableDiffusionGenerateImage(prompt, size, imageName) {
@@ -86,25 +89,6 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 		],
 	};
 
-	// const response = fetch(path, {
-	// 	headers,
-	// 	method: "POST",
-	// 	body: JSON.stringify(body),
-	// });
-
-	// if (!response.ok) {
-	// 	throw new Error(`Non-200 response: ${await response.text()}`);
-	// }
-
-	// const responseJSON = await response.json();
-
-	// // Should always be 1 image, if more overwrite the previous one
-	// responseJSON.artifacts.forEach((image, index) => {
-	// 	fs.writeFileSync(`images/${imageName}.png`, Buffer.from(image.base64, "base64"));
-	// });
-
-	// return response;
-
 	const options = {
 		hostname: "api.stability.ai",
 		path: path,
@@ -112,7 +96,7 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 		headers: headers,
 	};
 
-	const request = new Promise((resolve, reject) => {
+	const res = new Promise((resolve, reject) => {
 		http.request(options, (res) => {
 			let data = "";
 
@@ -146,7 +130,7 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 			.end(JSON.stringify(body));
 	});
 
-	return request;
+	return res;
 }
 
 /**
@@ -160,25 +144,25 @@ async function generateImageAndSave(model, prompt, issueId, username, size) {
 
 	var cleanedPromt = customFilter.clean(prompt);
 
-	let request = null;
+	let result = null;
 
 	switch (model) {
 		case "dall-e":
-			request = await openAiGenerateImage(cleanedPromt, size, imageName);
+			result = await openAiGenerateImage(cleanedPromt, size, imageName);
 			break;
 		case "stable-diffusion":
-			request = await stableDiffusionGenerateImage(cleanedPromt, size, imageName);
+			result = await stableDiffusionGenerateImage(cleanedPromt, size, imageName);
 			break;
 		default:
-			request = await openAiGenerateImage(cleanedPromt, size, imageName);
+			result = await openAiGenerateImage(cleanedPromt, size, imageName);
 			break;
 	}
 
 	return {
 		prompt: cleanedPromt,
 		username: username,
-		file: file,
-		request: request,
+		file: result?.file,
+		request: result?.request,
 	};
 }
 
