@@ -109,6 +109,8 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 			});
 
 			res.on("end", () => {
+				console.debug("Stable Diffusion result data: " + data);
+
 				const responseJSON = JSON.parse(data);
 
 				// get the image from response
