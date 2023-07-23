@@ -24,7 +24,11 @@ jobs:
                   echo OPENAI_API_KEY="${{ secrets.OPENAI_API_KEY }}" >> .env
                   echo STABLE_DIFFUSION_API_KEY="${{ secrets.STABLE_DIFFUSION_API_KEY }}" >> .env
                   echo PROMPT="${{ github.event.discussion.title }}" >> .env
-                  printf 'DISCUSSION_BODY="%s"\n' "${{ github.event.discussion.body }}" | tr '\n' ' ' >> .env
+                  echo -n DISCUSSION_BODY=\" >> .env
+                  while IFS= read -r line; do
+                      echo -n "$line " >> .env
+                  done <<< "${{ github.event.discussion.body }}"
+                  echo \" >> .env
                   echo IMAGE_SIZE="1024" >> .env
                   echo GITHUB_DISCUSSION_NUMBER="${{ github.event.discussion.number }}" >> .env
                   echo GITHUB_USERNAME="${{ github.event.discussion.user.login }}" >> .env
