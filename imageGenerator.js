@@ -8,10 +8,12 @@ var Filter = require("bad-words");
 var customFilter = new Filter({ placeHolder: "x" });
 
 const configuration = new Configuration({
-	apiKey: process.env.OPENAI_API_KEY
+	apiKey: process.env.OPENAI_API_KEY,
 });
 
 const openai = new OpenAIApi(configuration);
+
+const stableDiffusionApiKey = process.env.STABLE_DIFFUSION_API_KEY;
 
 /**
  * You guessed! it writes text to an image
@@ -42,21 +44,11 @@ async function writeTextToImage(file, text) {
 	return image.write(file.path);
 }
 
-/**
- * Generate an image and save it to the images folder
- * @param {string} prompt
- * @param {string} username
- * @returns
- */
-async function generateImageAndSave(prompt, issueId, username, size) {
-	var imageName = issueId;
-
-	var cleanedPromt = customFilter.clean(prompt);
-
+async function openAiGenerateImage(prompt, size, imageName) {
 	const response = await openai.createImage({
-		prompt: cleanedPromt,
+		prompt: prompt,
 		n: 1,
-		size: size
+		size: size + "x" + size,
 	});
 
 	const file = fs.createWriteStream(`images/${imageName}.png`);
@@ -69,14 +61,129 @@ async function generateImageAndSave(prompt, issueId, username, size) {
 		});
 	});
 
+	return request;
+}
+
+async function stableDiffusionGenerateImage(prompt, size, imageName) {
+	const path = "https://api.stability.ai/v1/generation/stable-diffusion-xl-beta-v2-2-2/text-to-image";
+
+	const headers = {
+		Accept: "application/json",
+		Authorization: stableDiffusionApiKey,
+	};
+
+	const body = {
+		width: size,
+		height: size,
+		steps: 50,
+		seed: 0,
+		cfg_scale: 7,
+		samples: 1,
+		style_preset: "enhance",
+		text_prompts: [
+			{
+				text: prompt,
+				weight: 1,
+			},
+		],
+	};
+
+	// const response = fetch(path, {
+	// 	headers,
+	// 	method: "POST",
+	// 	body: JSON.stringify(body),
+	// });
+
+	// if (!response.ok) {
+	// 	throw new Error(`Non-200 response: ${await response.text()}`);
+	// }
+
+	// const responseJSON = await response.json();
+
+	// // Should always be 1 image, if more overwrite the previous one
+	// responseJSON.artifacts.forEach((image, index) => {
+	// 	fs.writeFileSync(`images/${imageName}.png`, Buffer.from(image.base64, "base64"));
+	// });
+
+	// return response;
+
+	const options = {
+		hostname: "api.stability.ai",
+		path: path,
+		method: "POST",
+		headers: headers,
+	};
+
+	const request = new Promise((resolve, reject) => {
+		http.request(options, (res) => {
+			let data = "";
+
+			res.on("data", (chunk) => {
+				data += chunk;
+			});
+
+			res.on("end", () => {
+				const responseJSON = JSON.parse(data);
+
+				// get the image from response
+				const image = responseJSON.artifacts[0];
+
+				// save the image
+				const imagePath = `images/${imageName}.png`;
+				fs.writeFileSync(imagePath, Buffer.from(image.base64, "base64"));
+
+				resolve({
+					file: {
+						path: imagePath,
+					},
+					prompt: prompt,
+					username: username,
+				});
+			});
+		})
+			.on("error", (error) => {
+				console.error(error);
+				reject(error);
+			})
+			.end(JSON.stringify(body));
+	});
+
+	return request;
+}
+
+/**
+ * Generate an image and save it to the images folder
+ * @param {string} prompt
+ * @param {string} username
+ * @returns
+ */
+async function generateImageAndSave(model, prompt, issueId, username, size) {
+	var imageName = issueId;
+
+	var cleanedPromt = customFilter.clean(prompt);
+
+	let request = null;
+
+	switch (model) {
+		case "dall-e":
+			request = await openAiGenerateImage(cleanedPromt, size, imageName);
+			break;
+		case "stable-diffusion":
+			request = await stableDiffusionGenerateImage(cleanedPromt, size, imageName);
+			break;
+		default:
+			request = await openAiGenerateImage(cleanedPromt, size, imageName);
+			break;
+	}
+
 	return {
 		prompt: cleanedPromt,
 		username: username,
 		file: file,
-		request: request
+		request: request,
 	};
 }
 
 module.exports = {
-	generateImageAndSave: generateImageAndSave
+	generateImageAndSave: generateImageAndSave,
 };
