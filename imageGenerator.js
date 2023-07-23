@@ -85,7 +85,6 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 		seed: 0,
 		cfg_scale: 7,
 		samples: 1,
-		style_preset: "enhance",
 		text_prompts: [
 			{
 				text: prompt,
