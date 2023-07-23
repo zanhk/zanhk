@@ -17,7 +17,7 @@ function printReadme(imageName, prompt, model, username) {
   <br>
   <br>
   <p class="has-text-grey"><i>"${prompt}"</i></p>
-  <p class="has-text-grey"> - <a href="https://github.com/${username}" target="_blank">@${username}</a> <br/><sup><sup>(using ${model})</sup></sup></p>
+  <p class="has-text-grey"> - <a href="https://github.com/${username}" target="_blank">@${username}</a></p>
   <p><samp><a href="https://github.com/zanhk/zanhk/tree/main/images">View past generations</a>  •  <a href="https://github.com/zanhk/zanhk/discussions/new?category=prompt">Generate a new image</a></samp></p>
 </div>`;
 	return content;
