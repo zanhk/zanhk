@@ -24,17 +24,10 @@ jobs:
                   echo OPENAI_API_KEY="${{ secrets.OPENAI_API_KEY }}" >> .env
                   echo STABLE_DIFFUSION_API_KEY="${{ secrets.STABLE_DIFFUSION_API_KEY }}" >> .env
                   echo PROMPT="${{ github.event.discussion.title }}" >> .env
-                  echo DISCUSSION_BODY="${{ github.event.discussion.body }}" | tr '\n' ' ' >> .env
+                  printf 'DISCUSSION_BODY="%s"\n' "${{ github.event.discussion.body }}" | tr '\n' ' ' >> .env
                   echo IMAGE_SIZE="1024" >> .env
                   echo GITHUB_DISCUSSION_NUMBER="${{ github.event.discussion.number }}" >> .env
                   echo GITHUB_USERNAME="${{ github.event.discussion.user.login }}" >> .env
-            - name: Output environment variables
-              run: |
-                  echo "PROMPT: ${{ env.PROMPT }}"
-                  echo "DISCUSSION_BODY: ${{ env.DISCUSSION_BODY }}"
-                  echo "IMAGE_SIZE: ${{ env.IMAGE_SIZE }}"
-                  echo "GITHUB_DISCUSSION_NUMBER: ${{ env.GITHUB_DISCUSSION_NUMBER }}"
-                  echo "GITHUB_USERNAME: ${{ env.GITHUB_USERNAME }}"
             - name: Install dependencies
               run: npm install
             - name: Generate image and write readme
