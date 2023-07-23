@@ -70,7 +70,7 @@ async function openAiGenerateImage(prompt, size, imageName) {
 async function stableDiffusionGenerateImage(prompt, size, imageName) {
 	console.debug("Generating image using Stable Diffusion");
 
-	const path = "https://api.stability.ai/v1/generation/stable-diffusion-xl-beta-v2-2-2/text-to-image";
+	const path = "https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image";
 
 	const headers = {
 		Accept: "application/json",
@@ -79,8 +79,8 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 	};
 
 	const body = {
-		width: 512,
-		height: 512,
+		width: parseInt(size),
+		height: parseInt(size),
 		steps: 50,
 		seed: 0,
 		cfg_scale: 7,
