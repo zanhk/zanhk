@@ -13,8 +13,6 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const stableDiffusionApiKey = process.env.STABLE_DIFFUSION_API_KEY;
-
 /**
  * You guessed! it writes text to an image
  * @param {*} file
@@ -69,7 +67,7 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 
 	const headers = {
 		Accept: "application/json",
-		Authorization: stableDiffusionApiKey,
+		Authorization: process.env.STABLE_DIFFUSION_API_KEY,
 	};
 
 	const body = {
