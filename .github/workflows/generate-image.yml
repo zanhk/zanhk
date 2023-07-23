@@ -24,7 +24,7 @@ jobs:
                   echo OPENAI_API_KEY="${{ secrets.OPENAI_API_KEY }}" >> .env
                   echo STABLE_DIFFUSION_API_KEY="${{ secrets.STABLE_DIFFUSION_API_KEY }}" >> .env
                   echo PROMPT="${{ github.event.discussion.title }}" >> .env
-                  echo DISCUSSION_BODY="${{ github.event.discussion.body }}" >> .env
+                  echo DISCUSSION_BODY="${{ github.event.discussion.body }}" | tr '\n' ' ' >> .env
                   echo IMAGE_SIZE="1024" >> .env
                   echo GITHUB_DISCUSSION_NUMBER="${{ github.event.discussion.number }}" >> .env
                   echo GITHUB_USERNAME="${{ github.event.discussion.user.login }}" >> .env
