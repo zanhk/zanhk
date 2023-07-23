@@ -135,7 +135,7 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 				reject(error);
 			})
 			.write(JSON.stringify(body))
-			.end(JSON.stringify(body));
+			.end();
 	});
 
 	return res;
