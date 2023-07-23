@@ -9,14 +9,14 @@ const fs = require("fs");
  * @param {string} username
  * @returns
  */
-function printReadme(imageName, prompt, username) {
+function printReadme(imageName, prompt, model, username) {
 	const content = `
 <div align="center">
   <a href="https://zank.it" target="_blank"><img src="https://raw.githubusercontent.com/zanhk/zanhk/main/${imageName}" width="1024px"></a>
   <br>
   <br>
   <br>
-  <p class="has-text-grey"><i>"${prompt}"</i> by <a href="https://github.com/${username}" target="_blank">@${username}</a></p>
+  <p class="has-text-grey"><i>"${prompt}"</i> by <a href="https://github.com/${username}" target="_blank">@${username}</a> using ${model}</p>
   <p><samp><a href="https://github.com/zanhk/zanhk/discussions/new?category=prompt">Generate a new image</a></samp></p>
 </div>`;
 	return content;
@@ -32,9 +32,9 @@ const getModel = function (discussionBody) {
 	let model = "dall-e";
 
 	if (discussionBody.includes("DALL-E")) {
-		model = "dall-e";
+		model = "DALL-E";
 	} else if (discussionBody.includes("Stable diffusion")) {
-		model = "stable-diffusion";
+		model = "Stable diffusion";
 	}
 
 	return model;
@@ -45,7 +45,7 @@ const getModel = function (discussionBody) {
  */
 const writeReadme = async function (model) {
 	var generatedImageRes = await generateImageAndSave(model, promt, issueId, username, size);
-	var readMeContent = printReadme(generatedImageRes.file.path, generatedImageRes.prompt, generatedImageRes.username);
+	var readMeContent = printReadme(generatedImageRes.file.path, generatedImageRes.prompt, generatedImageRes.model, generatedImageRes.username);
 
 	// write to README.md
 	fs.writeFile("README.md", readMeContent, (err) => {

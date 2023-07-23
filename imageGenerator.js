@@ -43,6 +43,8 @@ async function writeTextToImage(file, text) {
 }
 
 async function openAiGenerateImage(prompt, size, imageName) {
+	console.debug("Generating image using Stable DALL-E");
+
 	const response = await openai.createImage({
 		prompt: prompt,
 		n: 1,
@@ -66,6 +68,8 @@ async function openAiGenerateImage(prompt, size, imageName) {
 }
 
 async function stableDiffusionGenerateImage(prompt, size, imageName) {
+	console.debug("Generating image using Stable Diffusion");
+
 	const path = "https://api.stability.ai/v1/generation/stable-diffusion-xl-beta-v2-2-2/text-to-image";
 
 	const headers = {
@@ -147,14 +151,15 @@ async function generateImageAndSave(model, prompt, issueId, username, size) {
 	let result = null;
 
 	switch (model) {
-		case "dall-e":
+		case "DALL-E":
 			result = await openAiGenerateImage(cleanedPromt, size, imageName);
 			break;
-		case "stable-diffusion":
+		case "Stable diffusion":
 			result = await stableDiffusionGenerateImage(cleanedPromt, size, imageName);
 			break;
 		default:
 			result = await openAiGenerateImage(cleanedPromt, size, imageName);
+			model = "DALL-E";
 			break;
 	}
 
@@ -163,6 +168,7 @@ async function generateImageAndSave(model, prompt, issueId, username, size) {
 		username: username,
 		file: result?.file,
 		request: result?.request,
+		model: model,
 	};
 }
 
