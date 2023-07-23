@@ -74,6 +74,7 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 
 	const headers = {
 		Accept: "application/json",
+		"Content-Type": "application/json", // Add this line
 		Authorization: process.env.STABLE_DIFFUSION_API_KEY,
 	};
 
