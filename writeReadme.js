@@ -28,7 +28,7 @@ const username = process.env.GITHUB_USERNAME || "zanhk";
 const issueId = process.env.GITHUB_DISCUSSION_NUMBER || 0;
 const size = process.env.OPENAI_OPTION_SIZE || "1024x1024";
 
-console.log(`${body}`);
+console.info(`${body}`);
 
 /**
  * Write the readme content to the console
@@ -42,7 +42,7 @@ const writeReadme = async function () {
 		if (err) {
 			console.error("There was an error writing the file.", err);
 		} else {
-			console.log("Successfully wrote to README.md");
+			console.debug("Successfully wrote to README.md");
 		}
 	});
 };
