@@ -1,5 +1,6 @@
 const dotenv = require("dotenv").config();
 const { generateImageAndSave } = require("./imageGenerator.js");
+const fs = require("fs");
 
 /**
  * Print the readme contents
@@ -35,7 +36,15 @@ console.log(`${body}`);
 const writeReadme = async function () {
 	var generatedImageRes = await generateImageAndSave(promt, issueId, username, size);
 	var readMeContent = printReadme(generatedImageRes.file.path, generatedImageRes.prompt, generatedImageRes.username);
-	console.info(`${readMeContent}`);
+
+	// write to README.md
+	fs.writeFile("README.md", readMeContent, (err) => {
+		if (err) {
+			console.error("There was an error writing the file.", err);
+		} else {
+			console.log("Successfully wrote to README.md");
+		}
+	});
 };
 
 writeReadme();
