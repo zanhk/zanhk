@@ -21,12 +21,12 @@ jobs:
             - name: Generate env file
               run: |
                   touch .env
-                  echo OPENAI_API_KEY='${{ secrets.OPENAI_API_KEY }}' >> .env
-                  echo PROMPT='${{ github.event.discussion.title }}' >> .env
-                  echo DISCUSSION_BODY='${{ github.event.discussion.body }}' >> .env
-                  echo OPENAI_OPTION_SIZE='1024x1024' >> .env
-                  echo GITHUB_DISCUSSION_NUMBER='${{ github.event.discussion.number }}' >> .env
-                  echo GITHUB_USERNAME='${{ github.event.discussion.user.login }}' >> .env
+                  echo OPENAI_API_KEY="${{ secrets.OPENAI_API_KEY }}" >> .env
+                  echo PROMPT="${{ github.event.discussion.title }}" >> .env
+                  echo DISCUSSION_BODY="${{ github.event.discussion.body }}" >> .env
+                  echo OPENAI_OPTION_SIZE="1024x1024" >> .env
+                  echo GITHUB_DISCUSSION_NUMBER="${{ github.event.discussion.number }}" >> .env
+                  echo GITHUB_USERNAME="${{ github.event.discussion.user.login }}" >> .env
             - name: Install dependencies
               run: npm install
             - name: start
