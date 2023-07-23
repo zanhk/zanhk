@@ -79,8 +79,8 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 	};
 
 	const body = {
-		width: 512,
-		height: 512,
+		width: parseInt(size),
+		height: parseInt(size),
 		steps: 50,
 		seed: 0,
 		cfg_scale: 7,
