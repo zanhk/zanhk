@@ -88,7 +88,7 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 		style_preset: "enhance",
 		text_prompts: [
 			{
-				text: "Test",
+				text: prompt,
 				weight: 1,
 			},
 		],
@@ -111,7 +111,7 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 				});
 
 				res.on("end", () => {
-					console.debug("Stable Diffusion result data: " + data);
+					// console.debug("Stable Diffusion result data: " + data);
 
 					const responseJSON = JSON.parse(data);
 
@@ -127,7 +127,6 @@ async function stableDiffusionGenerateImage(prompt, size, imageName) {
 							path: imagePath,
 						},
 						prompt: prompt,
-						username: username,
 					});
 				});
 			})
