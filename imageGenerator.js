@@ -43,7 +43,7 @@ async function writeTextToImage(file, text) {
 }
 
 async function openAiGenerateImage(prompt, size, imageName) {
-	console.debug("Generating image using Stable DALL-E");
+	console.debug("Generating image using DALL-E");
 
 	const response = await openai.createImage({
 		prompt: prompt,

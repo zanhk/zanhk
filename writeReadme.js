@@ -29,7 +29,9 @@ const issueId = process.env.GITHUB_DISCUSSION_NUMBER || 0;
 const size = process.env.IMAGE_SIZE || "1024";
 
 const getModel = function (discussionBody) {
-	let model = "dall-e";
+	let model = "DALL-E";
+
+	console.debug("Discussion body: " + discussionBody);
 
 	if (discussionBody.includes("DALL-E")) {
 		model = "DALL-E";
@@ -58,5 +60,7 @@ const writeReadme = async function (model) {
 };
 
 let model = getModel(body);
+
+console.debug("Model: " + model);
 
 writeReadme(model);
