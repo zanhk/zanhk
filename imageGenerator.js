@@ -1,4 +1,4 @@
-const { Configuration, OpenAIApi } = require("openai");
+const { OpenAIApi } = require("openai");
 const http = require("https"); // or 'https' for https:// URLs
 const fs = require("fs");
 const Jimp = require("jimp");
@@ -7,11 +7,9 @@ var Filter = require("bad-words");
 
 var customFilter = new Filter({ placeHolder: "x" });
 
-const configuration = new Configuration({
-	apiKey: process.env.OPENAI_API_KEY,
+const openai = new OpenAIApi({
+	api_key: process.env.OPENAI_API_KEY,
 });
-
-const openai = new OpenAIApi(configuration);
 
 /**
  * You guessed! it writes text to an image
