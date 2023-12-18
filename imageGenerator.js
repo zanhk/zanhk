@@ -46,6 +46,7 @@ async function openAiGenerateImage(prompt, size, imageName) {
 	console.debug("Generating image using DALL-E");
 
 	const response = await openai.createImage({
+		model: "dall-e-3",
 		prompt: prompt,
 		n: 1,
 		size: size + "x" + size,

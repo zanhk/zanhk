@@ -6,7 +6,7 @@ body:
       attributes:
           label: What model do you want to use?
           options:
-              - DALL-E 2
+              - DALL-E 3
               - Stable diffusion
       validations:
           required: true
