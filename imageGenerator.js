@@ -52,7 +52,7 @@ async function openAiGenerateImage(prompt, size, imageName) {
 
 	const file = fs.createWriteStream(`images/${imageName}.png`);
 
-	const request = await http.get(response.data.data[0].url, function (response) {
+	const request = await http.get(response.data[0].url, function (response) {
 		response.pipe(file);
 		file.on("finish", () => {
 			writeTextToImage(file.path, "zank.it");
