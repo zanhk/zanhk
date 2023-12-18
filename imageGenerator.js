@@ -1,4 +1,4 @@
-const { OpenAIApi } = require("openai");
+const { OpenAI } = require("openai");
 const http = require("https"); // or 'https' for https:// URLs
 const fs = require("fs");
 const Jimp = require("jimp");
@@ -7,8 +7,8 @@ var Filter = require("bad-words");
 
 var customFilter = new Filter({ placeHolder: "x" });
 
-const openai = new OpenAIApi({
-	api_key: process.env.OPENAI_API_KEY,
+const openai = new OpenAI({
+	apiKey: process.env.OPENAI_API_KEY,
 });
 
 /**
